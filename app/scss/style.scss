@@ -1,6 +1,5 @@
 @import 'vars';
 @import 'global';
-@import 'fonts';
 
 // start header
 
@@ -254,6 +253,69 @@
                 cursor: pointer;
                 outline: none;
             }
+        }
+    }
+}
+// end product slider
+
+// advantages
+
+.advantages {
+    background-color: $bg;
+    padding: 124px 0 118px;
+    &__title {
+        color: #fff;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        min-width: 370px;
+        text-align: center;
+        padding: 0 15px;
+        &:hover {
+            .advantages__item-img {
+                background-color: $green;
+            }
+            .advantages__item-title {
+                color: $green;
+            }
+            svg {
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+        &-img {
+            width: 114px;
+            height: 114px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+            svg {
+                width: 55px;
+                height: 55px;
+                transition: all 0.3s;
+            }
+
+        }
+        &-title {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 25px;
+            transition: all 0.3s;
+        }
+        &-text {
+            color: #b0bec5;
+            font-size: 15px;
+            font-weight: 400;
         }
     }
 }
