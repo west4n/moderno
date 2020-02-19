@@ -38,6 +38,7 @@ body {
     font-weight: 400;
     line-height: 24px;
     color: $text;
+    overflow-x: hidden;
 }
 
 .container {
@@ -70,6 +71,18 @@ body {
 .rate-star {
     display: inline-block;
     margin-right: 13px;
+}
+.angel-right {
+    position: relative;
+    padding-left: 15px;
+    &::before {
+        content: '\f105';
+        font-family: 'icomoon';
+        position: absolute;
+        color: $green;
+        left: 0;
+        font-size: 14px;
+    }
 }
 .breadcrumbs {
     &__inner {
