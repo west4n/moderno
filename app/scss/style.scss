@@ -1467,9 +1467,6 @@
         }
     }
 }
-.icon-shopping-cart {
-    background-color: #8bc34a;
-}
 .icon-heart-o {
     background-color: #42a5f5;
 }
@@ -1890,6 +1887,200 @@
 }
 
 // end settings
+// start profile
+.profile__inner {
+    display: flex;
+    margin-bottom: 30px;
+}
+.profile__content {
+    width: 100%;
+}
+.profile__asside {
+    margin-right: 30px;
+    max-width: 270px;
+    width: 100%;
+    & .footer__social-link {
+        margin-bottom: 30px;
+    }
+}
+.profile-status {
+    padding: 6px 9px 5px 30px;
+    border: 1px solid #cccccc;
+    color: #707070;
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        left: 11px;
+        top: 13px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+
+    }
+}
+.profile-on {
+    &::before {
+        background-color: $green;
+    }
+}
+.profile-off {
+    &::before {
+        background-color: #f4511e;
+    }
+}
+.profile__asside-btn {
+    margin-bottom: 13px;
+}
+.profile__asside-message {
+    text-align: center;
+    margin-bottom: 17px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 1px 2px rgba(69, 90, 100, 0.75);
+    background-color: #546e7a;
+    color: #ffffff;
+    padding: 18px 10px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '\f003';
+        font-family: 'icomoon';
+        left: 57px;
+        top: 17px;
+        font-size: 16px;
+        font-weight: 400;
+
+    }
+}
+.profile__asside-following {
+    text-align: center;
+    margin-bottom: 30px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0 1px 2px rgba(69, 90, 100, 0.75);
+    background-color: #8bc34a;
+    color: #ffffff;
+    padding: 18px 10px;
+}
+.profile__banner {
+    padding: 20px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    margin-bottom: 35px;
+}
+.profie__banner-images {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 332px;
+}
+.profile__items {
+    display: flex;
+    border: 1px solid #dedede;
+}
+.profile__item {
+    width: 25%;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 5px 17px;
+    & + .profile__item {
+        border-left: 1px solid #dedede;
+    }
+}
+.profile__item-title {
+    color: #263238;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.profile__item-content {
+    color: #707070;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+}
+.profile-settings {
+    .product-one__tabs.settings__tabs {
+        .tabs span {
+            font-family: 'Roboto', sans-serif !important;
+            color: #707070;
+            position: relative;
+            &.active {
+                &::before {
+                    color: $green;
+                }
+            }
+            &::before {
+                font-family: 'icomoon';
+                color: #d0d0d0;
+                position: absolute;
+                left: 25px;
+                font-size: 14px;
+            }
+        }
+    }   
+}
+.personal-box {
+    background-color: #fff;
+    padding: 35px 40px 25px;
+    border: 1px solid #dedede;
+}
+.personal-box__title {
+    color: #263238;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.personal-box-text {
+    margin-bottom: 20px;
+    color: #707070;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.personal-box__items {
+    
+}
+.personal-box__item {
+    
+}
+.personal-box__item-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.personal-box__item-name {
+    color: #263238;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;    
+}
+.personal-box__item-number {
+    color: #263238;
+    font-size: 16px;
+    font-weight: 700;
+}
+.personal-box__item-line {
+    height: 15px;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    margin-bottom: 23px;
+    span {
+        display: block;
+        border-radius: 3px;
+        height: 15px;
+        background-image: url(../img/pro-bar.jpg);
+        background-repeat: repeat;
+    }
+}
+// end profile
 
 
 
