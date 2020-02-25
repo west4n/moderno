@@ -300,6 +300,7 @@
     width: 729px;
     padding-top: 92px;
     padding-bottom: 114px;
+    display: none;
     .fancybox-button svg path {
         color: #fff;
     }
@@ -1804,8 +1805,6 @@
         justify-content: space-between;
     }
 }
-.container {
-}
 // end contact
 // start settings
 .product-one__tabs.settings__tabs {
@@ -2044,13 +2043,8 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
-}
-.personal-box__items {
-    
-}
-.personal-box__item {
-    
-}
+}   
+
 .personal-box__item-head {
     display: flex;
     justify-content: space-between;
@@ -2081,6 +2075,273 @@
     }
 }
 // end profile
+// start upload
+.upload__inner {
+   background-color: #fff;
+   border: 1px solid #d7d7d7;
+   margin-bottom: 110px;
+   button {
+    color: #ffffff;
+    background-color: $green;
+    border: none;
+    padding: 15px 36px;
+    margin-left: 175px;
+    cursor: pointer;
+   }
+   &-title {
+        padding: 16px 35px 18px;
+        color: #263238;
+        font-size: 24px;
+        font-weight: 500;
+        border-bottom: 1px solid #d7d7d7;
+        margin-bottom: 40px;
+   }
+   &-content {
+       margin-bottom: 30px;
+       padding-left: 45px;
+       padding-right: 50px;
+   }
+}
+.upload-line {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    label {
+         min-width: 175px;
+         padding-right: 15px;
+         color: #444444;
+         font-family: Roboto;
+         font-size: 15px;
+         font-weight: 400;
+         line-height: 60px;
+    }
+    span {
+        color: $green;
+    }
+    select,
+    input,
+    textarea {
+        width: 100%;
+        height: 40px;
+        display: block;
+        border: 1px solid #d7d7d7;
+        background-color: #f9f9f9;
+        padding: 0 18px;
+        &::placeholder {
+            color: #707070;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+    textarea {
+        resize: none;
+        height: 150px;
+        padding: 8px 18px;
+    }
+    input[type=" "] {
+        outline: none;
+    }
+    .jq-file {
+        width: 100%;
+        height: 40px;
+        box-shadow: none;
+        border: 1px solid #d7d7d7;
+        background-color: #f9f9f9;
+        border-radius: 0px;
+    }
+    .jq-file__browse {
+        box-shadow: none;
+        text-shadow: none;
+        background: #fff;
+        border-radius: 0px;
+        border-left: 1px solid #d7d7d7;
+        border: 1px solid #d7d7d7;
+        padding: 0 12px;
+        font-size: 12px;
+        line-height: 26px;
+        color: #444444;
+        top: 5px;
+        right: auto;
+        left: 9px;
+    }
+    .jq-file__name {
+        box-shadow: none;
+        border: none;
+        border-bottom-color: transparent;
+        background: transparent;
+        border-radius: 0px;
+        padding: 0 18px;
+        height: 40px;
+        width: 100%;
+        font-size: 12px;
+        color: #707070;
+        line-height: 40px; 
+        margin-left: 112px;
+    }
+    .jq-selectbox {
+        width: 100%;
+    }
+    .jq-selectbox__select {
+        height: 40px;
+        padding: 0 18px;
+        border: 1px solid #d7d7d7;
+        background: #f9f9f9;
+        border-bottom-color: #d7d7d7;
+        border-radius: 0px;
+        box-shadow: none;
+        color: #707070;
+        text-shadow: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        line-height: 40px;
+    }
+    .jq-selectbox__trigger-arrow {
+        border: none;
+        top: 0;
+        right: 20px;
+        color: #444444;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 35px;
+        &::before {
+            font-family: 'icomoon';
+            content: '\f0dd';
+        }
+    }
+    .jq-selectbox__trigger {
+        border-left: none;
+    }
+}
+
+// end upload
+// start withdrawals
+.withdrawals__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+    button {
+        color: #ffffff;
+        background-color: $green;
+        border: none;
+        padding: 15px 36px;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+}
+.withdrawals__col {
+    max-width: 570px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    height: 100%;
+}
+.withdrawals__title {
+    color: #263238;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 18px 32px 24px;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 30px;
+}
+.withdrawals__content {
+    padding-left: 35px;
+    padding-right: 40px;
+}
+.withdrawals__line {
+    margin-bottom: 25px;
+    label {
+        display: block;
+        width: 100%;
+        color: #263238;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 15px; 
+        span {
+            color: $green;
+        }
+    }
+    input {
+        width: 100%;
+        height: 42px;
+        border: 1px solid #d7d7d7;
+        background-color: #f9f9f9;
+        padding: 0 25px;
+        &::placeholder {
+            color: #707070;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+    .jq-selectbox {
+        width: 100%;
+    }
+    .jq-selectbox__select {
+        height: 40px;
+        padding: 0 18px;
+        border: 1px solid #d7d7d7;
+        background: #f9f9f9;
+        border-bottom-color: #d7d7d7;
+        border-radius: 0px;
+        box-shadow: none;
+        color: #707070;
+        text-shadow: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        line-height: 40px;
+    }
+    .jq-selectbox__trigger-arrow {
+        border: none;
+        top: 0;
+        right: 20px;
+        color: #444444;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 35px;
+        &::before {
+            font-family: 'icomoon';
+            content: '\f0dd';
+        }
+    }
+    .jq-selectbox__trigger {
+        border-left: none;
+    }
+}
+.withdrawals__content-items{
+    padding-bottom: 35px;
+}
+.withdrawals__content-item{
+    height: 42px;
+    display: flex;
+    align-items: center;
+    color: #444444;
+    font-size: 13px;
+    font-weight: 400;
+    &:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+}
+.withdrawals__content-date {
+    width: 154px;
+    padding-left: 20px;
+    font-weight: 500;
+}
+.withdrawals__content-email {
+    width: 180px;
+}
+.withdrawals__content-price {
+    width: 70px;
+    font-weight: 700;
+}
+
+.withdrawals__content-status {
+    width: 88px;
+    &.withdrawals__content-paid {
+        color: $green;
+    }
+}
+
+
+// end withdrawals
 
 
 
